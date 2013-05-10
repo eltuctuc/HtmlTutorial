@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>CSS Selektoren</title>
+		<style type="text/css">
+		
+		/* Universalselektor */
+		* {}
+
+		/* Typeselektor */
+		h1, h2, h3 {}
+
+		/* Klassenselektor */
+		.note {}
+
+		/* ID-Selektor */
+		#introduction {}
+
+		/* Kindselektor */
+		li > a {}
+
+		/* Nachkommenselektor */
+		p a {}
+
+		/* Selektor für benachbarte Geschwister */
+		h1 + p {}
+
+		/* Allgemeiner Geschwisterselektor */
+		h1 ~ p {}
+		
+		</style>
+	</head>
+	<body>
+		<h1><a id="top">Küchengartenkalender</a></h1>
+		<p id="introduction">Dieser praktische Ratgeber sagt ihnen, wann sie was tun müssen.</p>
+		<h2>Frühjehr</h2>
+		<ul>
+			<li><a href="mulch.html">Gemüsebeete mulchen</a></li>
+			<li><a href="potato.html">Frühkartoffeln pflanzen</a></li>
+			<li><a href="tomato.html">Tomaten säen</a></li>
+			<li><a href="beet.html">Rüben sähen</a></li>
+			<li><a href="zucchini.html">Zucchini säen</a></li>
+			<li><a href="rhubarb.html">Welke Rhabarberblüten zupfen</a></li>
+		</ul>
+		<p class="note">Verfasst von <a href="mailto:jon@example.org">jon@example.org</a> für <a href="http://www.wiley.com">Wiley</a>.</p>
+		<p><a href="#top">nach oben</a></p>
+	</body>
+</html>
