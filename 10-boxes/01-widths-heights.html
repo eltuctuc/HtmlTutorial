@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Beiten und Höhen</title>
+	<style type="text/css">
+
+	body {
+		font-family: Arial, Verdana, sans-serif;
+		color: #111111;
+	}
+
+	#firstbox {
+		width: 400px;
+		height: 300px;
+		background-color: #ee3e80;
+	}
+	#firstbox p {
+		height: 75%;
+		width: 75%;
+		background-color: #e1ddda;
+	}
+
+
+	th {
+		border-bottom: 1px solid #0088dd; 
+		text-align: left; 
+		color: #0088dd;
+		font-weight: normal;
+	}
+	td {
+		min-width: 150px;
+		min-height: 200px;
+		vertical-align: top;
+		line-height: 1.4em;
+	}
+	td.description {
+		min-width: 450px;
+		max-width: 650px;
+		text-align: left;
+		padding: 5px;
+		margin: 0px;
+	}
+
+	#overflow {
+		font-size: 90%;
+		line-height: 1.2em;
+		width: 200px;
+	}
+	#overflow h2 {
+		color: #0088dd;
+		border-bottom: 1px solid #0088dd;
+	}
+	#overflow p {
+		min-height: 30px;
+		max-height: 85px;
+	}
+	#overflow p.one {
+		overflow: hidden;
+	}
+	#overflow p.two {
+		overflow: scroll;
+	}
+	#overflow p.three {
+		overflow: auto;
+	}
+	</style>
+</head>
+<body>
+	<div id="firstbox">
+		<p>Die Familie Moog leistete Pionierarbeit bei der kommerziellen Herstellung von modularen, spannungsgesteuerten Analogsynthesizern in den frühen 1950er Jahren.</p>
+	</div>
+
+	<table>
+		<tr>
+			<th>Foto</th>
+			<th>Beschreibung</th>
+			<th>Preis</th>
+		</tr>
+		<tr>
+			<td><img src="img/rhodes.jpg" width="200" height="150" alt="Fender Rhodes" /></td>
+			<td class="description">Das Rhodes-Piano ist ein elektronisches Klavier, das Harold Rhodes in den 50er Jahren erfunden und später in einer geringen Anzahl von Modellen gebaut hat, zuerst in Zusammenarbeit mit Fender und später durch CBS. Über ein klavierähnliches Manual werden Hammer ausgelöst, die auf kleine Metallzinken schlagen, was elektromagnetisch verstärkt wird.</td>
+			<td>$1400</td>
+		</tr>
+		<tr>
+			<td><img src="img/wurlitzer.jpg" width="200" height="150" alt="Wurlitzer EP200" /></td>
+			<td class="description">Das Wurlitzer-Elektropiano ist ein elektromagnetisches Klavier, das von der Rudolph Wurlitzer Company in Mississipps erfunden wurde. Die Firma Wurlitzer bezeichnet das Instrument niemals Elektropiano, sondern prägte den Begriff"Elektronisches Piano" und verwendeteihn während der gesamten Produktionszeit als Markenname. Über ein klavierähnliches Manual werden Hammer ausgelöst, die auf kleine Metallzinken schlagen, was elektromagnetisch verstärkt wird.</td>
+			<td>$1600</td>
+		</tr>
+		<tr>
+			<td><img src="img/clavinet.jpg" width="200" height="150" alt="Hohner Clavinet D6" /></td>
+			<td class="description">Ein Clavinet ist ein elektronisch verstärktes Klavichord der Firma Hohne. Jede Taste verfügt über eine Gummispitze, um einen Hammer auf eine Saite schlagen zu lassen. Das bemerkenswert helle Stakatoklang wird häufig mit dem einer E-Gitarre verglichen. Im laufe der Jahre wurden verschiedene Varianten hergestellt, z.B. die Modelle I, II, L, C D6 und E7.</td>
+			<td>$1200</td>
+		</tr>
+	</table>
+
+	<div id="overflow">
+		<h2>Fender Mustang</h2>
+		<p class="one">Der Fender Mustang wurde 1964 eingeführt und bildete die Grundlage für eine erhebliche Designänderung der Lernmodelle von Fender, die damals aus Musicmaste runo der Duo-Sonic bestanden. Er erfreunte sich schon in der Surfmusikszene der 60er Jahre große Beliebtheit und erlangte in den 90ern Kultstatus, da ihn vielealternative Rockbands verwendeten.</p>
+		<h2>Fender Stratocaster</h2>
+		<p class="two">Der Fender Stratocaster oder "Strat" gehört zu den berühmtesten E-Gitarren aller Zeiten, und sein Design wurde von vielen Gitarrenherstellern kopiert. Entworfen wurde er 1954 von Leo Fender, George Fullerton und Fredie Tavares.</p>
+		<h2>Gibson Les Paul</h2>
+		<p class="three">Die Gibson Les Paul ist eine E-Gitarre mit massivem Korpus und wurde erstmals 1952 verkauft. Sie wurde von Ted McCarthy in Zusammenarbeit mit dem berühmten Gitarristen Les Paul entworfen, den Gibson anheuerte, um das neue Modell bekannt zu machen. Sie gehört zu den bekanntesten E-Gitarren der Welt.</p>
+	</div>
+</body>
+</html>

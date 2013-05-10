@@ -1,0 +1,118 @@
+﻿<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Textformatierung</title>
+	<style type="text/css">
+		body {
+			margin: 2em auto;
+			width: 70%;	
+		}
+		.box {
+			border: thin solid darkred;
+			padding: 2em;
+			margin: 2em 0;
+		}
+
+		/* Font Face */
+		@font-face {
+			font-family: 'ChunkFiveRegular';
+			src: url('fonts/chunkfive.eot');
+			src: url('fonts/chunkfive.eot?#iefix') format('embedded-opentype'),
+     			 url('fonts/chunkfive.woff') format('woff'),
+     			 url('fonts/chunkfive.ttf') format('truetype'),
+     			 url('fonts/chunkfive.svg#ChunkFiveRegular') format('svg');
+		}
+		#firstbox h1, #firstbox h2 {
+			font-family: ChunkFiveRegular, Georgia, serif;
+			text-transform: uppercase;
+			letter-spacing: 0.2em;
+		}
+		#firstbox p {
+			text-indent: 2em;
+		}
+
+		#firstbox p.intro:first-letter {
+			font-size: 200%;
+		}
+		#firstbox p.intro:first-line {
+			font-weight: bold;
+		}
+
+		#firstbox p.line-height {
+			line-height: 1.4em;
+		}
+		#firstbox .credits {
+			font-weight: bold;
+			word-spacing: 1em;
+			text-align: right;
+		}
+
+		#six-months {
+			vertical-align: text-top;
+		}
+		#one-year {
+			vertical-align: middle;
+		}
+		#two-years {
+			vertical-align: text-bottom;
+		}
+
+		/* Text Shadow */
+		#shadow p {
+			font-size: 200%;
+			padding: 20px;
+			text-align: center;
+		}
+		#shadow p.one {
+			background-color: #eeeeee;
+			color: #666666;
+			text-shadow: 1px 1px 0px #000000;
+		}
+		#shadow p.two {
+			background-color: #dddddd;
+			color: #666666;
+			text-shadow: 1px 1px 3px #666666;
+		}
+		#shadow p.three {
+			background-color: #cccccc;
+			color: #ffffff;
+			text-shadow: 2px 2px 7px #111111;
+		}
+		#shadow p.four {
+			background-color: #bbbbbb;
+			color: #cccccc;
+			text-shadow: -1px -2px #666666;
+		}
+		#shadow p.five {
+			background-color: #aaaaaa;
+			color: #ffffff;
+			text-shadow: -1px -1px #666666;
+		}
+	</style>
+</head>
+<body>
+	<div id="firstbox" class="box">
+		<h1>Briards</h1>
+		<h2>Ein großes Herz in dichtem Palz</h2>
+		<p class="intro">Der <a class="breed" href="http://de.wikipedia.org/wiki/Briard">Briard</a> oder Berger de Brie ist eine große Hunderasse, die traditionell als Schäferhund eingesetzt wird.</p>
+		<h3>Geschichte der Rasse</h3>
+		<p>Der Briad, dessen Wurzeln wahrscheinlich in Frankreich liegen, wird schon seit Jahrhunderten zum Hüten und Bewachen von Schafen gezüchtet. Hunde dieser Rasse wurden von der französischen Armee aufgrund ihres feinen Hörvermögens als Wach- und Botenhunde und zur Suche nach Verwundeten eingesetzt. Briards wurden im ersten Weltkrieg fast bis zur Ausrottung eingesetzt. Zurzeit erholt sich die Population dieser Rasse langsam wieder. Karl der Große, NApoleon, Thomas Jefferson und Lafayette waren stolze Besitzer von Briards.</p>
+		<p class="line-height">Der Briad, dessen Wurzeln wahrscheinlich in Frankreich liegen, wird schon seit Jahrhunderten zum Hüten und Bewachen von Schafen gezüchtet. Hunde dieser Rasse wurden von der französischen Armee aufgrund ihres feinen Hörvermögens als Wach- und Botenhunde und zur Suche nach Verwundeten eingesetzt. Briards wurden im ersten Weltkrieg fast bis zur Ausrottung eingesetzt. Zurzeit erholt sich die Population dieser Rasse langsam wieder. Karl der Große, NApoleon, Thomas Jefferson und Lafayette waren stolze Besitzer von Briards.</p>
+		<p class="credits">von Ivy Duckett</p>
+		<h2>Lebensstadien des Briad</h2>
+		<ul>
+			<li><img src="img/six-months.gif" width="50" height="50" alt="Six months" id="six-months" /> Sechs Monate</li>
+			<li><img src="img/one-year.gif" width="50" height="50" alt="One year" id="one-year" /> Ein Jahr</li>
+			<li><img src="img/two-years.gif" width="50" height="50" alt="Two years" id="two-years" /> Zwei Jahre</li>
+		</ul>
+	</div>
+
+	<div id="shadow" class="box">
+		<p class="one">Der Briard wird als ein Herz mit Fell bezeichnet.</p>
+		<p class="two">Der Briard wird als ein Herz mit Fell bezeichnet.</p>
+		<p class="three">Der Briard wird als ein Herz mit Fell bezeichnet.</p>
+		<p class="four">Der Briard wird als ein Herz mit Fell bezeichnet.</p>
+		<p class="five">Der Briard wird als ein Herz mit Fell bezeichnet.</p>
+	</div>
+</body>
+</html>
