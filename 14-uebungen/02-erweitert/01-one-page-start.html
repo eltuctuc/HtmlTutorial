@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="de">
+<head>
+	<meta charset="utf-8">
+	<title>One Page</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link href='http://fonts.googleapis.com/css?family=Noto+Sans|Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
+	<style type="text/css">
+		body {
+			background-color: #6d695c;
+			background: rgb(188, 187, 156);
+			background-image:
+				repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+				repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
+				linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
+				linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
+			background-size: 70px 120px;
+
+			font: 1em/1.5 'Noto Sans', arial, sans-serif;
+
+			margin: 3em 0 5em;
+			padding: 0;
+		}
+		h1,h2,h3,h4,h5,h6 {
+			font-family: 'Noto Serif', 'Times New Roman', Times, serif;
+			margin: 0;
+		}
+
+		#wrapper {
+			width: 720px;
+			margin: 0 auto;
+			background: white;
+			padding: 1em;
+			border-radius: 1em;
+		}
+
+		#header {
+			background: rgb(51, 50, 42);
+			color: rgb(255, 253, 211);
+			border-top-left-radius: 0.7em;
+			border-top-right-radius: 0.7em;
+		}
+		#header > hgroup {
+			position: relative;
+			height: 6em;
+		}
+		#header h1 {
+			position: absolute;
+			top: 0.25em;
+			left: 0.5em;
+			background: transparent url(img/one-page-logo.png) left top no-repeat;
+			padding-left: 70px;
+			height: 80px;
+		}
+		#header p {
+			position: absolute;
+			top: 0;
+			right: 1em;
+		}
+		#navigation ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			background: rgb(109, 109, 91);
+		}
+		#navigation li {
+			display: inline-block;
+			margin: 0 1em;
+		}
+		#navigation a {
+			color: rgb(255, 253, 211);
+			text-decoration: none;
+			display: block;
+		}
+		#navigation a:focus, #navigation a:hover {
+			color: rgb(51, 50, 42);
+		}
+
+		.hero {
+			/*background: rgb(188, 187, 156);
+			background-image: url(http://www.slidesdesign.com/wp-content/uploads/orange-retro-polka-dots-backgrounds-wallpapers-orange-retro-polka-dots-photo.jpg);
+			background-size: 100% 100%;*/
+			background: rgb(169, 168, 140);
+			
+			padding: 0.75em;
+			margin: 0 0.25em 2em;
+			border-radius: 0.75em;
+
+			font-size: large;
+		}
+
+		.box {
+			display: inline-block;
+			width: 30%;
+			vertical-align: top;
+			margin: 0 1.45%;
+			font-size: small;
+
+			padding: 1em 1em 0.5em;
+
+			border-radius: 1em;
+			border: thin solid rgb(51, 50, 42);
+			
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+
+		.deco {
+			background: url(img/hr--background.png) center center no-repeat;
+			height: 50px;
+			margin: 1em 0;
+		}
+		.deco > hr {
+			display: none;
+		}
+
+		#form, #map {
+			display: inline-block;
+
+			vertical-align: top;
+			
+			-webkit-box-sizing: border-box;
+			   -moz-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+		#form {
+			width: 45%;
+			margin-right: 4%; 
+		}
+
+		#form input, #form textarea {
+			display: block;
+			width: 100%;
+			font: 1em/1.5 'Noto Sans', arial, sans-serif;
+		}
+		#form textarea {
+			height: 10em;
+		}
+
+
+		#map {
+			width: 50%;
+		}
+
+		#footer {
+			background: rgb(51, 50, 42);
+			color: rgb(255, 253, 211);
+			border-bottom-left-radius: 0.7em;
+			border-bottom-right-radius: 0.7em;
+
+			padding: 1em;
+		}
+		#footer p {
+			margin: 0;
+		}
+		#footer a {
+			color: rgb(255, 253, 211);
+			text-decoration: none;
+		}
+		#footer a:focus, #footer a:hover {
+			color: rgb(109, 109, 91);
+		}
+	</style>
+</head>
+<body>
+	<div id="wrapper" class="container">
+		<header id="header" role="banner">
+			<hgroup>
+				<h1>One Page</h1>
+				<p>Beispielseite für die Html-Schulung</p>
+			</hgroup>
+			<nav id="navigation" role="navigation">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div id="main" role="main">
+			<div id="slider">
+				<figure><a href="http://www.flickr.com/photos/stasmoshkov/5654984656/sizes/l/in/photostream/"><img src="http://farm6.staticflickr.com/5227/5654984656_21a928fd20_z.jpg" alt="Retro"></a></figure>
+			</div>
+			<div id="content" role="contents">
+				<section class="hero">
+					<h2>Pagetitle</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, nam esse quisquam modi cupiditate! Voluptatem, ad, expedita, ut odit natus doloremque officiis aut distinctio possimus reiciendis non odio commodi fugit.</p>
+				</section>
+				<section class="box">
+					<h3>Section One</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, hic, cum, nam maxime delectus accusantium doloremque a aperiam libero voluptate sapiente dolorem eum deserunt. Quia laudantium at ipsa consequatur possimus!</p>
+					<p><a href="#">weiter</a></p>
+				</section>
+				<section class="box">
+					<h3>Section Two</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, rerum, incidunt architecto aut cumque magni a repudiandae in iure at nesciunt quidem veniam eaque recusandae earum eveniet quasi. Odio, eligendi!</p>
+					<p><a href="#">weiter</a></p>
+				</section>
+				<section class="box">
+					<h3>Section Three</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, assumenda, eaque accusantium sequi quidem tenetur alias dolor debitis commodi unde ex error maiores similique optio vitae consequuntur minus impedit blanditiis?</p>
+					<p><a href="#">weiter</a></p>
+				</section>
+				
+				<div class="deco">
+					<hr>
+				</div>
+
+				<section id="form">
+					<h3>Kontakt</h3>
+					<form action="#" method="post" accept-charset="utf-8">
+						<p>
+							<label for="">Name:</label>
+							<input type="text">
+						</p>
+						<p>
+							<label for="">Email:</label>
+							<input type="email" required>
+						</p>
+						<p>
+							<label for="">Betreff:</label>
+							<input type="text">
+						</p>
+						<p>
+							<label for="">Nachricht:</label>
+							<textarea></textarea>
+						</p>
+						<p>
+							<input type="submit" value="abschicken">
+						</p>
+					</form>
+				</section>
+				<div id="map">
+					<iframe width="100%" height="500" src="http://regiohelden.de/google-maps/map.php?width=353&amp;height=500&amp;hl=de&amp;q=Franz-Zebisch-Str.%2015%2C%2092637%20Weiden+(Deutsche%20Post%20AG)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=A&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a style="font-size: 9px;" href="http://arbeitskleidung-stuttgart.de">arbeitskleidung-stuttgart.de</a> - <a href="http://www.regiohelden.de/">RegioHelden</a></iframe>
+				</div>
+			</div>
+			<aside>
+				
+			</aside>
+		</div>
+		<footer id="footer" role="copyright">
+			<p>© 2013 &ndash; <a href="http://re-design.de">RE-Design</a>
+		</footer>
+	</div>
+</body>
+</html>
